@@ -33,7 +33,7 @@ const CreateNote = asyncHandler(async (req, res) => {
   if (!title || !content || !category) {
     res.status(400);
     throw new Error("Please Fill all the feilds");
-    return;
+    // return;
   } else {
     const note = new Note({ user: req.user._id, title, content, category });
 

@@ -13,7 +13,7 @@ function LoginScreen({ history }) {
   const [password, setPassword] = useState("");
 
   const dispatch = useDispatch();
-
+// Allows you to extract data from the Redux store state, using a selector function.
   const userLogin = useSelector((state) => state.userLogin);
   const { loading, error, userInfo } = userLogin;
 

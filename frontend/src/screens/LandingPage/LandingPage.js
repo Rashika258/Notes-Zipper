@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./LandingStyles.css";
 
 function LandingPage({ history }) {
+  // Allows you to extract data from the Redux store state, using a selector function.
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
